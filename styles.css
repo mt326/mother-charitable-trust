@@ -182,3 +182,68 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+/* New Mission Section Styles */
+.mission {
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('images/india-map.png') center/contain no-repeat;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.mission-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.mission-statement {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.mission-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.mission-subtext {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
